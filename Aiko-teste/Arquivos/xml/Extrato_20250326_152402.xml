@@ -1,0 +1,22 @@
+<Extrato>
+  <Cliente>Statement for BigCo</Cliente>
+  <Performances>
+    <Performance>
+      <Nome>Hamlet</Nome>
+      <Valor>R$ 402,50</Valor>
+      <Creditos>55</Creditos>
+    </Performance>
+    <Performance>
+      <Nome>As You Like It</Nome>
+      <Valor>R$ 269,80</Valor>
+      <Creditos>35</Creditos>
+    </Performance>
+    <Performance>
+      <Nome>Othello</Nome>
+      <Valor>R$ 357,00</Valor>
+      <Creditos>40</Creditos>
+    </Performance>
+  </Performances>
+  <Total>Amount owed is R$ 1.029,30</Total>
+  <CreditosTotais>You earned 47 credits</CreditosTotais>
+</Extrato>

@@ -1,0 +1,6 @@
+@Aiko_teste_HostAddress = http://localhost:5268
+
+GET {{Aiko_teste_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
