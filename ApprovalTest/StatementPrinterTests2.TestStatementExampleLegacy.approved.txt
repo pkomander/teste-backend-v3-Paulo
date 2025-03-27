@@ -1,0 +1,7 @@
+﻿Success with Message='Statement for BigCo
+  Hamlet: R$ 402,50 (55 seats)
+  As You Like It: R$ 269,80 (35 seats)
+  Othello: R$ 357,00 (40 seats)
+Amount owed is R$ 1.029,30
+You earned 47 credits
+'

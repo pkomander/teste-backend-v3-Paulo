@@ -15,7 +15,7 @@ namespace Aiko.Repository.Helpers.Profiles
         {
             CreateMap<Performance, PerformanceDto>();
             CreateMap<PerformanceDto, Performance>()
-                .ForMember(dst => dst.PlayId, opt => opt.MapFrom((frm, dst) => frm.Play.PlayId))
+                .ForMember(dst => dst.PlayId, opt => opt.MapFrom((frm, dst) => frm.PlayId))
                 .ForMember(dst => dst.Play, opt => opt.Ignore());
         }
     }

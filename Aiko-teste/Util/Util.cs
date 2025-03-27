@@ -62,7 +62,7 @@ namespace Aiko_teste.Util
             }
         }
 
-        public async Task CriarArquivoXml(string conteudo, string caminhoArquivo)
+        public async Task<string> CriarArquivoXml(string conteudo, string caminhoArquivo)
         {
             try
             {
@@ -107,6 +107,8 @@ namespace Aiko_teste.Util
                 );
 
                 await File.WriteAllTextAsync(caminhoArquivo, xml.ToString(SaveOptions.None));
+
+                return xml.ToString();
             }
             catch (Exception ex)
             {

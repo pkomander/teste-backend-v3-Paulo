@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aiko-teste", "Aiko-teste.csproj", "{D357FD57-5DE5-48AE-82EF-FAEEBF11B654}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aiko.Dto", "..\Aiko.Dto\Aiko.Dto.csproj", "{C9D13F22-D3BF-4A15-A631-6C8C77F77D30}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aiko.Repository", "..\Aiko.Repository\Aiko.Repository.csproj", "{808D7E6C-7A73-4490-9A9F-B7286E291AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalTest", "..\ApprovalTest\ApprovalTest.csproj", "{8100DBCF-5576-4272-A1BF-15A01A2D2C20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{808D7E6C-7A73-4490-9A9F-B7286E291AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{808D7E6C-7A73-4490-9A9F-B7286E291AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{808D7E6C-7A73-4490-9A9F-B7286E291AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8100DBCF-5576-4272-A1BF-15A01A2D2C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8100DBCF-5576-4272-A1BF-15A01A2D2C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8100DBCF-5576-4272-A1BF-15A01A2D2C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8100DBCF-5576-4272-A1BF-15A01A2D2C20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,7 +31,7 @@ namespace Aiko.Repository.Services.Repository
 
                 if (!string.IsNullOrEmpty(model.Custumer))
                 {
-                    query = query.Where(w => w.Custumer.Contains(model.Custumer) || w.InvoiceId == model.InvoiceId);
+                    query = query.Where(w => w.Custumer.Contains(model.Custumer));
                 }
                 else if (model.InvoiceId != null)
                 {
@@ -41,6 +41,8 @@ namespace Aiko.Repository.Services.Repository
                 {
                     Result.Fail("Nao parametro de busca foi informado!");
                 }
+
+                var teste = await _context.Invoices.ToListAsync();
 
                 var invoice = await query.FirstOrDefaultAsync();
 
@@ -90,7 +92,7 @@ namespace Aiko.Repository.Services.Repository
                             }
                             thisAmount += 3.00 * item.Audience;
                             break;
-                        case "histórico":
+                        case "history":
                             if (item.Audience > 30)
                             {
                                 thisAmount += (10.00 * (item.Audience - 30)) + (100.00 + 5.00 * (item.Audience - 20));

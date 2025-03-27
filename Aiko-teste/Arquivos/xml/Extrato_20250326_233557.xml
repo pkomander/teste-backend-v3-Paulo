@@ -1,0 +1,32 @@
+<Extrato>
+  <Cliente>Statement for BigCo</Cliente>
+  <Performances>
+    <Performance>
+      <Nome>Hamlet</Nome>
+      <Valor>R$ 402,50</Valor>
+      <Creditos>55</Creditos>
+    </Performance>
+    <Performance>
+      <Nome>As You Like It</Nome>
+      <Valor>R$ 269,80</Valor>
+      <Creditos>35</Creditos>
+    </Performance>
+    <Performance>
+      <Nome>Othello</Nome>
+      <Valor>R$ 357,00</Valor>
+      <Creditos>40</Creditos>
+    </Performance>
+    <Performance>
+      <Nome>Henry V</Nome>
+      <Valor>R$ 326,18</Valor>
+      <Creditos>36</Creditos>
+    </Performance>
+    <Performance>
+      <Nome>King John</Nome>
+      <Valor>R$ 269,00</Valor>
+      <Creditos>40</Creditos>
+    </Performance>
+  </Performances>
+  <Total>Henry V: R$ 326,18 (36 seats)</Total>
+  <CreditosTotais>King John: R$ 269,00 (40 seats)</CreditosTotais>
+</Extrato>

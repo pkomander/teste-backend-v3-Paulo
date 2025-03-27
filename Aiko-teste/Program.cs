@@ -3,17 +3,35 @@ using Aiko.Repository.Services.Interface;
 using Aiko.Repository.Services.Repository;
 using Aiko_teste.Util;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+        options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+    });
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
+    c.EnableAnnotations(); // Habilita leitura das anotações Swagger
+
+    c.SchemaFilter<SwaggerIgnoreFilter>();
+});
+
 //Adicionando o CORS
 builder.Services.AddCors();
+
+
 
 builder.Services.AddDbContext<DataContext>(context => context.UseSqlServer(builder.Configuration.GetConnectionString("AikoTeste")));
 
